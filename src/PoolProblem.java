@@ -121,7 +121,6 @@ public class PoolProblem {
 	public static ArrayList<Interval> MergeIntervals(ArrayList<Interval> ListIntervals) {
 		
 		Collections.sort(ListIntervals, (a,b) -> a.getBeg() - b.getBeg());
-		
         Interval base = ListIntervals.get(0);
         int beg = base.getBeg();
         int end = base.getEnd();
